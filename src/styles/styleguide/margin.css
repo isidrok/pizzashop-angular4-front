@@ -1,0 +1,7 @@
+:root{
+    --margin-tiny: 4px;
+    --margin-small: 8px; 
+    --margin-medium: 16px;
+    --margin-big: 32px;
+    --margin-large: 64px;
+}

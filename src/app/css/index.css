@@ -1,0 +1,9 @@
+@import './pizzashop.css'; 
+@import '../components/**/*.css'; /* <--- */
+@import '../../styles/styleguide/index.css'; 
+@import '../../styles/layout/index.css';
+@import '../../styles/themes/deeppurple_amber.css';
+
+/* 
+    Done, now just start styling your components
+*/

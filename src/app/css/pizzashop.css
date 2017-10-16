@@ -1,0 +1,24 @@
+/*
+@import '../components/scene/menu/css/variables.css'; 
+@import '../../styles/styleguide/media.css';  
+@import '../../styles/styleguide/padding.css'; 
+
+    Do this everytime you want to use custom variables or 
+    custom media queries if not using the glob import
+*/
+
+.ps-scene{
+     height: -webkit-fill-available;
+}
+.ps-scene__menu{
+   width: 0px;
+   @media (--gt-sm){       
+        width: var(--ps-menu-width);
+   }
+}
+.ps-scene__content{
+    padding-left: 0px;
+    @media (--gt-sm){
+        padding-left: var(--padding-small);
+    }
+}
