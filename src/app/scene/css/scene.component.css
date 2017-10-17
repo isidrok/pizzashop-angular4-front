@@ -13,8 +13,8 @@
   }
 }
 .ps-scene__content{
-   padding-left: 0px;
-   @media (--gt-sm){
-     padding-left: var(--padding-small);
-   }
+  padding-left: 0px;
+  @media (--gt-sm){
+    padding-left: var(--padding-small);
+  }
 }

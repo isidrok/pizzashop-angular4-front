@@ -13,19 +13,19 @@ const pkg = require('./package.json');
 
 const globals = {
   'pizzashop': 'pizzashop',
-  '@angular/animations': '',
-  '@angular/cdk': '',
-  '@angular/common': '',
-  '@angular/common/http': '',
-  '@angular/compiler': '',
-  '@angular/core': '',
-  '@angular/forms': '',
-  '@angular/http': '',
-  '@angular/platform-browser': '',
-  '@angular/platform-browser/animations': '',
-  '@angular/platform-browser-dynamic': '',
-  '@angular/router': '',
-  '@angular/material': '',
+  '@angular/animations': 'pizzashop.angularVendor.animations',
+  '@angular/cdk': 'pizzashop.angularVendor.cdk',
+  '@angular/common': 'pizzashop.angularVendor.common',
+  '@angular/common/http': 'pizzashop.angularVendor.commonHttp',
+  '@angular/compiler': 'pizzashop.angularVendor.compiler',
+  '@angular/core': 'pizzashop.angularVendor.core',
+  '@angular/forms': 'pizzashop.angularVendor.forms',
+  '@angular/http': 'pizzashop.angularVendor.http',
+  '@angular/platform-browser': 'pizzashop.angularVendor.platformBrowser',
+  '@angular/platform-browser/animations': 'pizzashop.angularVendor.platformBrowserAnimations',
+  '@angular/platform-browser-dynamic': 'pizzashop.angularVendor.platformBrowserDynamic',
+  '@angular/router': 'pizzashop.angularVendor.router',
+  '@angular/material': 'pizzashop.angularVendor.material',
 };
 
 export default {
@@ -36,6 +36,8 @@ export default {
   },
   sourcemap: true,
   name: pkg.namespace,
+  globals,
+  external: Object.keys(globals),
   plugins: [
     replace({
       exclude: 'node_modules/**',
