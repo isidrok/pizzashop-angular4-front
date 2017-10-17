@@ -1,0 +1,11 @@
+<mat-sidenav #sidenav class="ps-scene__menu-content vertical" mode="side">
+  <div class="ps-scene__menu__header">
+    <img src="assets/logo.png">
+    <h1 class="ps-scene__menu__header-text">Pizzashop</h1>
+  </div>
+  <div class="vertical ps-scene__menu-items">
+    <ng-container *ngFor="let item of menuItems">
+      <ps-menu-item [path]="item.path" [text]="item.text"></ps-menu-item>
+    </ng-container>
+  </div>
+</mat-sidenav>

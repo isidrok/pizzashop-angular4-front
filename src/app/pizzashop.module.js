@@ -1,25 +1,41 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
-import {MaterialModule} from './modules/material';
+import {RoutingModule} from './routing';
+import {AuthService} from './services';
+import {
+  PizzashopCoreModule,
+  ModuleLoaderProvider,
+  APIInterceptorProvider,
+} from './core';
 import {PizzashopComponent} from './pizzashop.component';
-import {Menu, AppBar, Content} from './components';
+import {
+  SceneComponent,
+  MenuComponent,
+  AppBarComponent,
+  ContentComponent,
+  MenuItemComponent,
+} from './scene';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot([], {useHash: true}),
-    MaterialModule,
+    PizzashopCoreModule,
+    RoutingModule,
   ],
   declarations: [
     PizzashopComponent,
-    Menu,
-    AppBar,
-    Content,
+    SceneComponent,
+    MenuComponent,
+    AppBarComponent,
+    ContentComponent,
+    MenuItemComponent,
+  ],
+  providers: [
+    AuthService,
+    ModuleLoaderProvider,
+    APIInterceptorProvider,
   ],
   bootstrap: [
     PizzashopComponent,

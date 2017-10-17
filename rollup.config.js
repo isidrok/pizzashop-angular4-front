@@ -18,7 +18,7 @@ export default {
     format: 'umd',
   },
   sourcemap: true,
-  name: pkg.modulename,
+  name: pkg.namespace,
   plugins: [
     replace({
       exclude: 'node_modules/**',

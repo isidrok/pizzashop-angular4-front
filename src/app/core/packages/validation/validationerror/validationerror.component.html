@@ -1,0 +1,5 @@
+<ng-container *ngIf="control.dirty && !control.valid">
+  <p *ngFor="let error of getErrors()" class="ps-validation__error">
+    {{error}}
+  </p>
+</ng-container>

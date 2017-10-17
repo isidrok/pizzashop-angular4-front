@@ -1,0 +1,20 @@
+@import './scene.variables.css';
+@import 'styleguide';
+
+.ps-scene{
+  height: 100%;
+  width:100%;
+  position: absolute !important;
+}
+.ps-scene__menu{
+  width: 0px;
+  @media (--gt-sm){       
+     width: var(--ps-menu-width);
+  }
+}
+.ps-scene__content{
+   padding-left: 0px;
+   @media (--gt-sm){
+     padding-left: var(--padding-small);
+   }
+}
