@@ -10,9 +10,6 @@ export class AppBarComponent {
   constructor(sceneService: SceneService) {
     this._sceneService = sceneService;
   }
-  initialize() {
-    this.show = !this._sceneService.menuDocked;
-  }
   toggleMenu = () => {
     this._sceneService.toggleMenu();
   }

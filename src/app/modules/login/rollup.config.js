@@ -22,8 +22,10 @@ const globals = {
   '@angular/forms': 'pizzashop.angularVendor.forms',
   '@angular/http': 'pizzashop.angularVendor.http',
   '@angular/platform-browser': 'pizzashop.angularVendor.platformBrowser',
-  '@angular/platform-browser/animations': 'pizzashop.angularVendor.platformBrowserAnimations',
-  '@angular/platform-browser-dynamic': 'pizzashop.angularVendor.platformBrowserDynamic',
+  '@angular/platform-browser/animations':
+    'pizzashop.angularVendor.platformBrowserAnimations',
+  '@angular/platform-browser-dynamic':
+    'pizzashop.angularVendor.platformBrowserDynamic',
   '@angular/router': 'pizzashop.angularVendor.router',
   '@angular/material': 'pizzashop.angularVendor.material',
 };

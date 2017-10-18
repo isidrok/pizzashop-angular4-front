@@ -1,9 +1,22 @@
 {
-    "presets": [
+  "env": {
+    "e2e": {
+      "presets": [
+        "es2015",
+        "angular2"
+      ],
+      "plugins": [
+        "transform-object-rest-spread"
+      ]
+    },
+    "development": {
+      "presets": [
         "es2015-rollup",
         "angular2"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
+      ],
+      "plugins": [
+        "transform-object-rest-spread"
+      ]
+    }
+  }
 }

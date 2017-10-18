@@ -2,17 +2,8 @@ import {Component, ViewChild} from '@angular/core';
 import {SceneService} from '../../scene.service';
 import html from './menu.component.html';
 import './menu.component.css';
+import {menuItemsMock} from './menuitems.mock.js';
 
-const menuItemsMock = [
-  {
-    path: 'pizzas',
-    text: 'SHOW PIZZAS',
-  },
-  {
-    path: 'pizzas/add',
-    text: 'ADD PIZZA',
-  },
-];
 
 @Component({
   selector: 'ps-menu',
