@@ -1,0 +1,7 @@
+@import 'styleguide';
+.ps-scepe__pizza__card-footer{
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}

@@ -2,8 +2,8 @@
   "pizzas": [
     {
       "id": 1,
-      "name": "margarita",
-      "img": "img/margarita.png",
+      "name": "Margarita",
+      "img": "assets/pizzas/margarita.png",
       "ingredients": [],
       "comments": [
         {
@@ -17,8 +17,8 @@
     },
     {
       "id": 2,
-      "name": "carbonara",
-      "img": "img/carbonara.png",
+      "name": "Carbonara",
+      "img": "assets/pizzas/carbonara.png",
       "ingredients": [
         {
           "id": 3,
@@ -52,8 +52,8 @@
     },
     {
       "id": 3,
-      "name": "barbacoa",
-      "img": "img/barbacoa.png",
+      "name": "Barbacoa",
+      "img": "assets/pizzas/barbacoa.png",
       "ingredients": [
         {
           "id": 3,
@@ -75,8 +75,8 @@
     },
     {
       "id": 4,
-      "name": "prosciutto",
-      "img": "img/prosciutto.png",
+      "name": "Prosciutto",
+      "img": "assets/pizzas/prosciutto.png",
       "ingredients": [
         {
           "id": 4,

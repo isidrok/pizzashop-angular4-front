@@ -12,9 +12,15 @@
      width: var(--ps-menu-width);
   }
 }
-.ps-scene__content{
+.ps-scene__appbar{
   padding-left: 0px;
   @media (--gt-sm){
     padding-left: var(--padding-small);
+  }
+}
+.ps-scene__content{
+  padding-left: 0px;
+  @media (--gt-sm){       
+     padding-left: var(--padding-big);
   }
 }

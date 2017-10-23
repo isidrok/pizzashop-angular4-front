@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {RoutingModule} from './routing';
-import {AuthService} from './services';
+import {HttpClientModule} from '@angular/common/http';
+import {PizzashopRoutingModule} from './pizzashop.routing';
 import {
   PizzashopCoreModule,
   ModuleLoaderProvider,
@@ -21,8 +21,9 @@ import {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     PizzashopCoreModule,
-    RoutingModule,
+    PizzashopRoutingModule,
   ],
   declarations: [
     PizzashopComponent,
@@ -33,7 +34,6 @@ import {
     MenuItemComponent,
   ],
   providers: [
-    AuthService,
     ModuleLoaderProvider,
     APIInterceptorProvider,
   ],

@@ -1,0 +1,7 @@
+@import 'styleguide';
+.ps-pizza{
+  justify-content: space-between;
+}
+.ps-pizza__card__wrapper{
+  padding: var(--padding-medium);
+}
