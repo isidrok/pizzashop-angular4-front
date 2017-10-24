@@ -3,22 +3,21 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
+import url from 'postcss-url';
 import cssnext from 'postcss-cssnext';
 import easyimport from 'postcss-easy-import';
 import cssnano from 'cssnano';
-import url from 'postcss-url';
 import string from 'rollup-plugin-string';
 import replace from 'rollup-plugin-replace';
-const pkg = require('./package.json');
 
 export default {
-  input: pkg['jsnext:main'],
+  input: 'src/index.js',
   output: {
-    file: pkg['main:min'],
+    file: 'dist/pizzashop.umd.js',
     format: 'umd',
   },
   sourcemap: true,
-  name: pkg.namespace,
+  name: 'pizzashop',
   plugins: [
     replace({
       exclude: 'node_modules/**',
@@ -30,7 +29,7 @@ export default {
           path: 'src/styles',
         }),
         url({
-          url: 'inline',
+          url: 'rebase',
         }),
         cssnext({
           features: {

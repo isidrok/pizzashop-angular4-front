@@ -13,16 +13,11 @@ export class PizzaComponent {
     this._getPizzas();
   }
   _getPizzas() {
-    this._getPizzasObs = this._pizzaService.getAll();
-    this._getPizzasObs.subscribe((data) => {
-      this.pizzas = data;
-    }, (error) => {
-      throw new Error(error);
-    });
-  }
-  ngOnDestroy() {
-    if (!this._getPizzasObs.closed) {
-      this._getPizzasObs.unsubscribe();
-    }
+    this._pizzaService.getAll()
+      .subscribe((data) => {
+        this.pizzas = data;
+      }, (error) => {
+        throw new Error(error);
+      });
   }
 }

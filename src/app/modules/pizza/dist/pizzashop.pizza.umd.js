@@ -277,19 +277,11 @@ var PizzaComponent = (_dec$2 = core.Component({
     value: function _getPizzas() {
       var _this = this;
 
-      this._getPizzasObs = this._pizzaService.getAll();
-      this._getPizzasObs.subscribe(function (data) {
+      this._pizzaService.getAll().subscribe(function (data) {
         _this.pizzas = data;
       }, function (error) {
         throw new Error(error);
       });
-    }
-  }, {
-    key: 'ngOnDestroy',
-    value: function ngOnDestroy() {
-      if (!this._getPizzasObs.closed) {
-        this._getPizzasObs.unsubscribe();
-      }
     }
   }]);
   return PizzaComponent;

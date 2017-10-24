@@ -3,20 +3,17 @@ import {RouterModule} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {SceneComponent} from './scene';
 
-const min = ENVIRONMENT === 'production' ? '.min' : '';
-
 @NgModule({
   imports: [
     RouterModule.forRoot([
       {
         path: '',
-        component: SceneComponent,
-        children: [
-          {
-            path: 'pizzas',
-            loadChildren: `src/app/modules/pizza/dist/pizzashop.pizza.umd${min}.js#pizza#PizzaModule`,
-          },
-        ],
+        redirectTo: 'pizzas',
+        pathMatch: 'full',
+      },
+      {
+        path: 'pizzas',
+        loadChildren: 'src/app/modules/pizza/dist/pizzashop.pizza.umd.js#pizza#PizzaModule',
       },
       {
         path: '**',

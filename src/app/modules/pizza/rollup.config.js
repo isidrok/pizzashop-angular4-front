@@ -6,10 +6,8 @@ import postcss from 'rollup-plugin-postcss';
 import cssnext from 'postcss-cssnext';
 import easyimport from 'postcss-easy-import';
 import cssnano from 'cssnano';
-import url from 'postcss-url';
 import string from 'rollup-plugin-string';
 import replace from 'rollup-plugin-replace';
-const pkg = require('./package.json');
 
 const globals = {
   'pizzashop': 'pizzashop',
@@ -31,13 +29,13 @@ const globals = {
 };
 
 export default {
-  input: pkg['jsnext:main'],
+  input: 'src/index.js',
   output: {
-    file: pkg['main:min'],
+    file: 'dist/pizzashop.pizza.umd.js',
     format: 'umd',
   },
   sourcemap: true,
-  name: pkg.namespace,
+  name: 'pizzashop.pizza',
   globals,
   external: Object.keys(globals),
   plugins: [
@@ -49,9 +47,6 @@ export default {
       plugins: [
         easyimport({
           path: '../../../styles',
-        }),
-        url({
-          url: 'inline',
         }),
         cssnext({
           features: {
