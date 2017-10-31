@@ -4,6 +4,7 @@ import {PizzashopCoreModule} from 'pizzashop';
 import {PizzaComponent} from './pizza.component';
 import {PizzaService} from './pizza.service';
 import {PizzaCardComponent} from './components';
+import {TestComponent, Test2Component} from './test';
 
 @NgModule({
   imports: [
@@ -13,6 +14,8 @@ import {PizzaCardComponent} from './components';
   declarations: [
     PizzaComponent,
     PizzaCardComponent,
+    TestComponent,
+    Test2Component,
   ],
   providers: [
     PizzaService,
