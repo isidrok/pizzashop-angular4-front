@@ -24,7 +24,7 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-register": "^6.26.0",
     "cssnano": "^3.10.0",
-    "eslint": "^4.9.0",
+    "eslint": "^4.18.2",
     "eslint-config-google": "^0.9.1",
     "http-server": "^0.10.0",
     "jasmine-core": "^2.8.0",
