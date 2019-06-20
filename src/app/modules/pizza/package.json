@@ -15,7 +15,7 @@
     "babel-preset-angular2": "0.0.2",
     "babel-preset-es2015-rollup": "^3.0.0",
     "cssnano": "^3.10.0",
-    "eslint": "^4.9.0",
+    "eslint": "^4.18.2",
     "eslint-config-google": "^0.9.1",
     "npm-run-all": "^4.0.2",
     "postcss-cssnext": "^3.0.2",
